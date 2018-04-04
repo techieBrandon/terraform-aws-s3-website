@@ -13,7 +13,7 @@ Terraform module for creating S3 backed Websites
 
 ```hcl
 module "website" {
-  source    = "git::https://github.com/cloudposse/terraform-aws-s3-website.git?ref=master"
+  source    = "git::https://github.com/techieBrandon/terraform-aws-s3-website.git?ref=master"
   namespace = "${var.namespace}"
   stage     = "${var.stage}"
   name      = "${var.name}"
@@ -32,7 +32,7 @@ module "website" {
 
 ```hcl
 module "website_with_cname" {
-  source         = "git::https://github.com/cloudposse/terraform-aws-s3-website.git?ref=master"
+  source         = "git::https://github.com/techieBrandon/terraform-aws-s3-website.git?ref=master"
   namespace      = "${var.namespace}"
   stage          = "${var.stage}"
   name           = "${var.name}"
